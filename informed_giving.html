@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>MouselabWEB Survey</TITLE>
+<script language=javascript src="mlweb2.js"></SCRIPT>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+</head>
+
+<body onLoad="timefunction('onload','body','body')">
+<!--BEGIN set vars--><script language="javascript">
+//override defaults
+mlweb_outtype="CSV";
+mlweb_fname="mlwebform";
+
+chkFrm=false;
+warningTxt="Bitte füllen Sie alle Antworten aus!";
+</SCRIPT>
+<!--END set vars-->
+
+<FORM name="mlwebform" method="POST" onSubmit="return checkForm(this)" action="http://www.mouselabweb.org/mlwebmailer.php">
+<INPUT type=hidden name="procdata" value="">
+<!-- set all variables here -->
+<input type=hidden name="expname" value="informed_giving">
+<input type=hidden name="nextURL" value="thanks.html">
+<input type=hidden name="to_email" value="steven.buergin@stud.unibas.ch">
+<!--these will be set by the script -->
+<input type=hidden name="subject" value="<?php echo($subject)?>">
+<input type=hidden name="condnum" value="<?php echo($condnum)?>">
+<!--BEGIN preHTML-->
+
+<!--END preHTML--><!--BEGIN postHTML-->
+
+<!--END postHTML--><INPUT type="submit" value="SUBMIT"></FORM></body></html>
