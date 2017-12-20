@@ -17,7 +17,8 @@ condnum=parseInt(formlink.condnum.value);
 document.cookie="mlweb_condnum="+condnum+"; path=/";
 document.cookie="mlweb_subject="+subject+"; path=/";
 
-var newWind=window.open(linkstr,"survey","height="+(screen.availHeight-60).toString()+",width="+(screen.availWidth-30).toString() +",scrollbars,status,resizable, left=2, top=2")
+var newWind=window.location.replace(linkstr,"survey","height="+(screen.availHeight-60).toString()+",width="+(screen.availWidth-30).toString() +",scrollbars,status,resizable, left=2, top=2")
+// ERSETZT: window.open durch window.location.replace
 
 }
 </script>
