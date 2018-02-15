@@ -14,7 +14,7 @@ subject = formlink.subject.value;
 condnum=parseInt(formlink.condnum.value);
 
 // set cookies
-document.cookie="mlweb_condnum="+condnum+"; path=/";
+// document.cookie="mlweb_condnum="+condnum+"; path=/";
 document.cookie="mlweb_subject="+subject+"; path=/";
 
 var newWind=window.location.replace(linkstr,"survey","height="+(screen.availHeight-60).toString()+",width="+(screen.availWidth-30).toString() +",scrollbars,status,resizable, left=2, top=2")
